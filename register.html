@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Infinity Car Wash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .register-container {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .register-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .register-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .register-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .register-form input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .terms {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .terms input {
+            width: auto;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .register-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .register-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Infinity<span>Car Wash</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="index.html#locations">Locations</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <li><a href="login.html" class="btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section class="register-section">
+        <div class="container">
+            <div class="register-container">
+                <h2>Create an Account</h2>
+                <form class="register-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+                <div class="login-link">
+                    <p>Already have an account? <a href="login.html">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Infinity<span>Car Wash</span></h2>
+                    <p>Premium car washing services for your vehicle.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#locations">Locations</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;
